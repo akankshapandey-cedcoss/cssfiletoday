@@ -12,7 +12,12 @@
       --penguin-belly: pink;
     --red-color: red;
   }
-  .red-box {
+  @media (max-width: 350px) {
+    :root {
+       --penguin-size: 200px;
+    --penguin-skin: black;
+    }
+   .red-box {
     background:red;
     background: var(--red-color);
     height: 200px;
